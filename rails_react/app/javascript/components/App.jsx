@@ -1,11 +1,17 @@
 import React, { Component } from "react";
 
+import "react-bulma-components/dist/react-bulma-components.min.css";
+import {
+  Button,
+
+} from "react-bulma-components";
+
 export default class App extends Component {
   render() {
     return (
-      <div>
-        <h1>Hello Rails! I'm {this.props.name}</h1>
-      </div>
+      <>
+        <Button color="primary">My Bulma button</Button>
+      </>
     );
   }
 }
