@@ -1,6 +1,7 @@
 module Api
 	module V1
-        class ArticlesController < ApplicationController   
+		class ArticlesController < ApplicationController   
+			before_action :authenticate_user!
             # Listar todos os artigos
 			def index
 				articles = Article.order('created_at DESC');
